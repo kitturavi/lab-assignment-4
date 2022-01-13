@@ -4,17 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab_4_Q1
+namespace L_4_Q2
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int i = 50;
-            while (i >= 1)
+            int i = 1;
+            while (i <= 50)
             {
-                Console.WriteLine(i);
-                i--;
+                if (i % 2 != 0)
+                {
+                    Console.WriteLine(i);
+                }
+                i++;
             }
             Console.ReadKey();
         }
